@@ -1,0 +1,248 @@
+:root {
+    --very-dark-bleu-main: hsl(222, 26%, 31%);
+    --very-dark-bleu-toggle: hsl(223, 31%, 20%);
+    --very-dark-bleu-screen: hsl(224, 36%, 15%);
+    --dark-bleu-background: hsl(225, 21%, 49%);
+    --dark-bleu-shadow: hsl(224, 28%, 35%);
+    --red : hsl(6, 63%, 50%);
+    --dark-red: hsl(6, 70%, 34%);
+    --light-grayish-orange: hsl(30, 25%, 89%);
+    --grayish-orange: hsl(28, 16%, 65%);
+    --very-dark-grayish-bleu: hsl(221, 14%, 31%);
+    --white: #fff;
+    --light-gray: hsl(0, 0%, 90%);
+    --grayish-red: hsl(0, 5%, 81%);
+    --very-light-gray: hsl(0, 0%, 93%);
+    --dark-cyan: hsl(185, 42%, 37%);
+    --very-dark-cyan: hsl(185, 58%, 25%);
+    --orange: hsl(25, 98%, 40%);
+    --dark-orange: hsl(25, 99%, 27%);
+    --light-gayish-yellow: hsl(45, 7%, 89%);
+    --dark-grayish-orange: hsl(35, 11%, 61%);
+    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --very-dark-violet-main: hsl(268, 75%, 9%);
+    --very-dark-violet: hsl(268, 71%, 12%);
+    --dark-violet: hsl(281, 89%, 26%);
+    --vivid-magenta: hsl(285, 91%, 52%);
+    --pure-cyan: hsl(176, 100%, 44%);
+    --soft-cyan: hsl(177, 92%, 70%);
+    --very-dark-violet-key-bg: hsl(268, 47%, 21%);
+    --dark-magenta: hsl(290, 70%, 36%);
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-bleu: hsl(198, 20%, 13%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-bleu-main);
+    height: 100vh;
+    transition: .5s;
+}
+.calc {
+    width: 420px;
+    background-color: var(--very-dark-bleu-main);
+    color: hsl(221, 14%, 31%);
+    transition: .5s;
+}
+.calc .head {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    color: var(--white);
+}
+.calc .head .name p {
+    font-size: 32px;
+}
+.calc .head .theme-container {
+    display: flex;
+    gap: 25px;
+}
+.calc .head .theme-container .h-1 {
+    font-size: 12px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 5px;
+}
+.calc .head .theme-container .themes .themes-num {
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.calc .head .theme-container .themes .themes-btns {
+    display: flex;
+    border-radius: 15px;
+    gap: 4px;
+    width: 60px;
+    background-color: var(--very-dark-bleu-toggle);
+    padding: 5px;
+}
+.calc .head .theme-container .themes .themes-btns .check-btn {
+    height: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+}
+.theme-one  {
+    background-color: #d13d39 !important;
+}
+.theme-one:hover {
+    background-color: #f66b63 !important;
+}
+.active {
+    opacity: 100% !important;
+}
+.theme-two {
+    background-color: #cb5302 !important;
+}
+.theme-two:hover {
+    background-color: #f78e3d !important;
+}
+.theme-three {
+    background-color: #01e3d6 !important;
+}
+.theme-three:hover {
+    background-color: #8ff9f4 !important;
+}
+
+.op {
+    background-color: var(--very-dark-bleu-screen);
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 32px;
+    transition: .5s;
+
+}
+.op span {
+    color: var(--white);
+}
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--very-dark-bleu-toggle);
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.btns button {
+    flex: 1 1 80px;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.numbers {
+    padding: 12px 10px;
+    font-size: 32px;
+    transition: .3s;
+}
+.b-p {
+    font-size: 24px;
+    padding: 13px 10px;
+    transition: .3s;
+}
+.equal {
+    font-size: 24px;
+    padding: 13px 10px;
+    transition: .3s;
+}
+.th-N-one {
+    background-color: var(--light-gray);
+    color: var(--very-dark-grayish-bleu);
+    box-shadow: 0px 1px 1px 1px var(--grayish-orange);
+}
+.th-N-one:hover {
+    background-color: var(--white);
+}
+.th-N-two {
+    background-color: var(--light-gayish-yellow);
+    color: var(--very-dark-grayish-yellow);
+    box-shadow: 0px 1px 1px 1px var(--dark-grayish-orange);
+}
+.th-N-two:hover {
+    background-color: var(--white);
+}
+.th-N-three {
+    background-color: var(--very-dark-violet-key-bg);
+    color: var(--light-yellow);
+    box-shadow: 0px 1px 1px 1px var(--dark-magenta);
+}
+.th-N-three:hover {
+    background-color: #6b34ac;
+}
+.th-P-one {
+    color: var(--white);
+    background-color: var(--dark-bleu-background) !important;
+    box-shadow: 0px 1px 1px 1px var(--dark-bleu-shadow);
+}
+.th-P-one:hover {
+    background-color: #a2b2e2 !important;
+}
+.th-P-two {
+    color: var(--white);
+    background-color: var(--dark-cyan) !important;
+    box-shadow: 0px 1px 1px 1px var(--very-dark-cyan);
+}
+.th-P-two:hover {
+    background-color: #62b5be !important;
+}
+.th-P-three {
+    color: var(--white);
+    background-color: var(--dark-violet) !important;
+    box-shadow: 0px 1px 1px 1px var(--vivid-magenta);
+}
+.th-P-three:hover {
+    background-color: #8731ae !important;
+}
+.th-E-one {
+    color: var(--white);
+    background-color: var(--red) !important;
+    box-shadow: 0px 1px 1px 1px var(--dark-red);
+}
+.th-E-one:hover {
+    background-color: #f96c5b !important;
+}
+.th-E-two {
+    color: var(--white);
+    background-color: var(--orange) !important;
+    box-shadow: 0px 1px 1px 1px var(--dark-orange);
+}
+.th-E-two:hover {
+    background-color: #ff8a38 !important;
+}
+.th-E-three {
+    color: var(--very-dark-bleu);
+    background-color: var(--pure-cyan) !important;
+    box-shadow: 0px 1px 1px 1px var(--soft-cyan);
+}
+.th-E-three:hover {
+    background-color: #94fff9 !important;
+}
+@media screen and (max-width: 380px) {
+    .calc {
+        width: 330px;
+    }
+    .btns button {
+        flex: 1 1 50px;
+    }
+}

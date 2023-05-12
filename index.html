@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- style sheet link  -->
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- Global font link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+
+<body>
+  <div id="calc" class="calc">
+    <div id="head" class="head">
+      <div class="name">
+        <p>calc</p>
+      </div>
+      <div class="theme-container">
+        <div class="h-1">
+          <p>THEME</p>
+        </div>
+        <div class="themes">
+          <div class="themes-num">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div id="toggle" class="themes-btns">
+            <button id="theme-one" class="theme-one active check-btn"></button>
+            <button  id="theme-two" class="theme-two check-btn"></button>
+            <button id="theme-three" class="theme-three check-btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="op" class="op">
+      <span>0</span>
+    </div>
+    <div id="btns-container" class="btns">
+      <button class="data-number numbers th-N-one">7</button>
+      <button class="data-number numbers th-N-one">8</button>
+      <button class="data-number numbers th-N-one">9</button>
+      <button class="delete b-p th-P-one">DEL</button>
+      <button class="data-number numbers th-N-one">4</button>
+      <button class="data-number numbers th-N-one">5</button>
+      <button class="data-number numbers th-N-one">6</button>
+      <button class="data-operation numbers th-N-one">+</button>
+      <button class="data-number numbers th-N-one">1</button>
+      <button class="data-number numbers th-N-one">2</button>
+      <button class="data-number numbers th-N-one">3</button>
+      <button class="data-operation numbers th-N-one">-</button>
+      <button class="data-number numbers th-N-one">.</button>
+      <button class="data-number numbers th-N-one">0</button>
+      <button class="data-operation numbers th-N-one">/</button>
+      <button class="data-operation numbers th-N-one">x</button>
+      <button class="clear-all b-p th-P-one">RESET</button>
+      <button class="equal th-E-one">=</button>
+    </div>
+
+    <!-- js file link  -->
+    <script src="./app/themes.js"></script>
+    <script src="./app/app.js"></script>
+  </div>
+</body>
+
+</html>
